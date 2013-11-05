@@ -1,0 +1,12 @@
+<!ELEMENT banco ( cuenta+, cliente+, impositor+ ) >
+<!ELEMENT cuenta ( #PCDATA | nombre-sucursal | número-cuenta | saldo )* >
+<!ELEMENT cliente ( nombre-cliente, calle-cliente, ciudad-cliente ) >
+<!ELEMENT impositor ( número-cuenta, nombre-cliente ) >
+
+<!ELEMENT número-cuenta ( #PCDATA ) >
+<!ELEMENT nombre-sucursal ( #PCDATA ) >
+<!ELEMENT nombre-cliente ( #PCDATA ) >
+<!ELEMENT calle-cliente ( #PCDATA ) >
+<!ELEMENT ciudad-cliente ( #PCDATA ) >
+<!ELEMENT saldo ( #PCDATA ) >
+

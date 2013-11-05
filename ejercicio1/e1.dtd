@@ -1,0 +1,17 @@
+<!ELEMENT alumnos ( alumno* ) >
+<!ELEMENT amigos ( universidad, alumno+ )+ >
+<!ELEMENT alumno ( nombre, hijo*, materia* ) >
+<!ELEMENT hijo ( nombre, cumpleaños ) >
+<!ELEMENT cumpleaños ( día, mes, año ) >
+<!ELEMENT materia ( nombre, examen* ) >
+<!ELEMENT examen ( año, nota, universidad )+ >
+
+<!ELEMENT universidad ( #PCDATA ) >
+<!ELEMENT nombre ( #PCDATA ) >
+<!ELEMENT día ( #PCDATA ) >
+<!ELEMENT mes ( #PCDATA ) >
+<!ELEMENT año ( #PCDATA ) >
+<!ELEMENT nota ( #PCDATA ) >
+
+<!ATTLIST materia tipo (terciario|grado|posgrado) "grado" >
+

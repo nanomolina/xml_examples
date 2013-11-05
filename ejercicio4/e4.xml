@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE bibliografía SYSTEM "e4.dtd">
+
+<bibliografía>
+    <libro>
+        <título> Harry Potter y la piedra filosofal </título>
+        <autor>
+            <apellido> Downking </apellido>
+            <nombre> Andrea </nombre>
+        </autor>
+        <año> 2001 </año>
+        <editor> BRujas inc </editor>
+        <lugar> Inglaterra </lugar>
+        <ISBN> 18274 </ISBN>
+    </libro>
+    <libro>
+        <título> Harry Potter y la camara secreta </título>
+        <autor>
+            <apellido> Downking </apellido>
+            <nombre> Andrea </nombre>
+        </autor>
+        <año> 2002 </año>
+        <editor> BRujas inc </editor>
+        <lugar> Inglaterra </lugar>
+        <ISBN> 18223454 </ISBN>
+    </libro>
+    <libro>
+        <título> FAst and furious </título>
+        <autor>
+            <apellido> zabana </apellido>
+            <nombre> joaquin </nombre>
+        </autor>
+        <año> 2005 </año>
+        <editor> zafari inc </editor>
+        <lugar> Brazil </lugar>
+        <ISBN> 3473 </ISBN>
+    </libro>
+    <artículo>
+        <título> harry y sus amigos </título>
+        <autor>
+            <apellido> Downking </apellido>
+            <nombre> Andrea </nombre>
+        </autor>
+        <revista> MAGAZINE </revista>
+        <año> 2001 </año>
+        <número> 2 </número>
+        <volumen> 1 </volumen>
+        <páginas> 20 </páginas>
+    </artículo>
+</bibliografía>

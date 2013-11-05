@@ -1,0 +1,6 @@
+(: Ejercicio 1 - consulta 1 :)
+
+for $x in doc("e1.xml")/alumnos/alumno
+where $x/hijo/cumpleaños/mes = "marzo"
+return $x/nombre
+

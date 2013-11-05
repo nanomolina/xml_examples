@@ -1,0 +1,6 @@
+(: Ejercicio 1 - consulta 2 :)
+
+for $x in doc("e1.xml")/alumnos/alumno
+where $x/materia/nombre = "Bases de datos" and $x/materia/examen/universidad = "UNC"
+return $x/nombre
+

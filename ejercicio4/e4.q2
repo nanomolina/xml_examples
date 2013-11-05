@@ -1,0 +1,7 @@
+for $x in doc("e4.xml")/bibliografía/libro
+let $año := $x/año
+order by $año
+return <autor-año> 
+        {data($x/autor)}
+        {data($x/año)}
+       </autor-año>

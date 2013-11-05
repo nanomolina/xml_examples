@@ -1,0 +1,9 @@
+(: Saldo total en todas las cuentas :)
+
+for $sucursal in distinct-values(doc("e3.xml")/banco/cuenta/nombre-sucursal)
+let $saldo_por_sucursal := sum(
+    for $cuenta in doc("e3.xml")/banco/cuenta[nombre-sucursal = $sucursal]
+    return $cuenta/saldo)
+return concat("saldo de la sucursal de", data($sucursal), "= ", $saldo_por_sucursal)
+
+

@@ -1,0 +1,9 @@
+(: Ejercicio 2 - Consulta 4 :)
+
+for $sucursal in doc("e3.xml")/banco/cuenta/nombre-sucursal
+let $saldo_por_sucursal := sum(
+for $cuenta in doc("e2.xml")/banco/cuenta[nombre-sucursal = $sucursal] (: o doc("e2.xml")/banco/cuenta/nombre-sucursal :)
+return $cuenta/saldo
+)
+return concat("Saldo de sucursal ",data($sucursal),"= ",$saldo_por_sucursal)
+

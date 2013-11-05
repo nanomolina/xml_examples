@@ -1,0 +1,8 @@
+for $impositor in doc("e3.xml")//impositor,
+    $cuenta in doc("e3.xml")//cuenta
+where $impositor/numero-cuenta = $cuenta/numero-cuenta
+return
+            <impositor-cuenta>
+            {$impositor/(número-cuenta|nombre-cliente)}
+            {$cuenta/(nombre-sucursal|saldo)}
+            </impositor-cuenta>

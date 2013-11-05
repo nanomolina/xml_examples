@@ -1,0 +1,15 @@
+<!ELEMENT bibliografía ( libro*, artículo* ) >
+<!ELEMENT libro ( título, autor+, año, editor, lugar?, ISBN ) >
+<!ELEMENT artículo ( título, autor+, revista, año, número, volumen, páginas? ) >
+<!ELEMENT autor ( apellido+, nombre ) >
+<!ELEMENT título ( #PCDATA ) >
+<!ELEMENT año ( #PCDATA ) >
+<!ELEMENT editor ( #PCDATA ) >
+<!ELEMENT revista ( #PCDATA ) >
+<!ELEMENT número ( #PCDATA ) >
+<!ELEMENT volumen ( #PCDATA ) >
+<!ELEMENT páginas ( #PCDATA ) >
+<!ELEMENT apellido ( #PCDATA ) >
+<!ELEMENT nombre ( #PCDATA ) >
+<!ELEMENT lugar ( #PCDATA ) >
+<!ELEMENT ISBN ( #PCDATA ) >

@@ -1,0 +1,5 @@
+(: Ejercicio 1 - consulta 3 :)
+
+for $x in doc("e1.xml")/alumnos/alumno[nombre="Juan Perez"]/materia
+return $x/nombre
+

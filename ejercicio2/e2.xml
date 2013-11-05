@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE banco SYSTEM "e2.dtd">
+<banco>
+<cuenta>
+<número-cuenta> C101 </número-cuenta>
+<nombre-sucursal> Centro </nombre-sucursal>
+<saldo> 500 </saldo>
+</cuenta>
+<cuenta>
+<número-cuenta> C102 </número-cuenta>
+<nombre-sucursal> Navacerrada </nombre-sucursal>
+<saldo> 400 </saldo>
+</cuenta>
+<cuenta>
+<número-cuenta> C201 </número-cuenta>
+<nombre-sucursal> Galapagar </nombre-sucursal>
+<saldo> 900 </saldo>
+1</cuenta>
+<cliente>
+<nombre-cliente> González </nombre-cliente>
+<calle-cliente> Arenal </calle-cliente>
+<ciudad-cliente> La Granja </ciudad-cliente>
+</cliente>
+<cliente>
+<nombre-cliente> López </nombre-cliente>
+<calle-cliente> Mayor </calle-cliente>
+<ciudad-cliente> Córdoba </ciudad-cliente>
+</cliente>
+<impositor>
+<número-cuenta> C101 </número-cuenta>
+<nombre-cliente> González </nombre-cliente>
+</impositor>
+<impositor>
+<número-cuenta> C201 </número-cuenta>
+<nombre-cliente> González </nombre-cliente>
+</impositor>
+<impositor>
+<número-cuenta> C102 </número-cuenta>
+<nombre-cliente> López </nombre-cliente>
+</impositor>
+</banco>
+

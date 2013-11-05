@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE alumnos SYSTEM "e1.dtd">
+
+<alumnos>
+ <alumno>
+  <nombre>Juan Perez</nombre>
+  <hijo>
+   <nombre>Luis Perez</nombre>
+   <cumpleaños>
+    <día>2</día>
+    <mes>marzo</mes>
+    <año>2001</año>
+   </cumpleaños>
+  </hijo>
+  <materia tipo="grado">
+   <nombre>Bases de datos</nombre>
+   <examen>
+    <año>2010</año>
+    <nota>2</nota>
+    <universidad>UNC</universidad>
+   </examen>
+   <examen>
+    <año>2011</año>
+    <nota>8</nota>
+    <universidad>UNC</universidad>
+   </examen>
+  </materia>
+ </alumno>
+</alumnos>

@@ -1,0 +1,7 @@
+for $autor in distinct-values(doc("e4.xml")/bibliografía/libro/autor)
+let $cant := count(doc("e4.xml")/bibliografía/libro[autor = $autor])
+return if ( count($autor) < $cant ) then
+       <autor>
+       {$autor}
+       </autor>
+else ()

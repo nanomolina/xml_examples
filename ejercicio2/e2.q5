@@ -1,0 +1,14 @@
+(: Ejercicio 3 - Consulta 5 :)
+(: Usar como referencia http://en.wikibooks.org/wiki/XQuery/XQuery_from_SQL :)
+
+(: no del todo correcta, por que? :)
+
+for $impositor in doc("e2.xml")//impositor
+for $cuenta in doc("e2.xml")//cuenta
+return if ( $impositor/número-cuenta = $cuenta/número-cuenta )
+then  
+<impositor-cuenta>
+{$impositor/(número-cuenta|nombre-cliente)}
+{$cuenta/(nombre-sucursal|saldo)}
+</impositor-cuenta>
+else ()

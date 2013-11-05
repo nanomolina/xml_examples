@@ -1,0 +1,6 @@
+for $libro in doc("e4.xml")/bibliografía/libro,
+    $artículo in doc("e4.xml")/bibliografía/artículo
+where $libro/autor/apellido = $artículo/autor/apellido
+and $libro/autor/nombre = $artículo/autor/nombre
+and $libro/año = $artículo/año
+return data($libro/autor)
